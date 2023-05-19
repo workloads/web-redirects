@@ -1,14 +1,14 @@
 terraform {
-  #  # see https://developer.hashicorp.com/terraform/language/settings/terraform-cloud
-  #  cloud {
-  #    # see https://developer.hashicorp.com/terraform/cli/cloud/settings#organization
-  #    organization = "workloads"
-  #
-  #    # see https://developer.hashicorp.com/terraform/cli/cloud/settings#workspaces
-  #    workspaces {
-  #      name = "web-assets"
-  #    }
-  #  }
+  # see https://developer.hashicorp.com/terraform/language/settings/terraform-cloud
+  cloud {
+    # see https://developer.hashicorp.com/terraform/cli/cloud/settings#organization
+    organization = "workloads"
+
+    # see https://developer.hashicorp.com/terraform/cli/cloud/settings#workspaces
+    workspaces {
+      name = "web-redirects"
+    }
+  }
 
   # see https://developer.hashicorp.com/terraform/language/settings#specifying-provider-requirements
   required_providers {
