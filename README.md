@@ -1,6 +1,6 @@
 # Terraform Cloud Workspace `web-assets`
 
-> This directory manages the lifecycle of the web assets for [@workloads](https://github.com/workloads).
+> This directory manages the lifecycle of web assets for [@workloads](https://github.com/workloads).
 
 ## Table of Contents
 
