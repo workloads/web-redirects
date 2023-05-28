@@ -22,13 +22,16 @@ variable "redirects" {
     {
       name   = "gh"
       target = "https://github.com/workloads/"
-    }, {
+      }, {
       name   = "home"
       target = "https://workloads.io/"
-    }, {
+      }, {
+      name   = "license"
+      target = "https://github.com/workloads/.github/blob/main/LICENSE"
+      }, {
       name   = "kb"
       target = "https://keybase.io/workloads"
-    }, {
+      }, {
       name   = "tw"
       target = "https://twitter.com/wrklds"
     },
