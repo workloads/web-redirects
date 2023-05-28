@@ -62,7 +62,5 @@ resource "aws_s3_object" "redirects" {
     "redirect:url" = each.value.target
   }
 
-  content_type     = "text/html"
-  content_encoding = "text/html"
+  content_type = "text/html"
 }
-
