@@ -15,7 +15,7 @@ terraform {
     # see https://registry.terraform.io/providers/hashicorp/aws/5.0.1
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 4.67.0, < 5.0.0"
+      version = ">= 5.0.1, < 6.0.0"
     }
 
     # see https://registry.terraform.io/providers/hashicorp/random/3.5.1
