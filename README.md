@@ -1,11 +1,11 @@
-# Terraform Cloud Workspace `web-assets`
+# Terraform Cloud Workspace `web-redirects`
 
-> This directory manages the lifecycle of web assets for [@workloads](https://github.com/workloads).
+> This directory manages URL Redirects for [@workloads](https://github.com/workloads).
 
 ## Table of Contents
 
 <!-- TOC -->
-* [Terraform Cloud Workspace `web-assets`](#terraform-cloud-workspace-web-assets)
+* [Terraform Cloud Workspace `web-redirects`](#terraform-cloud-workspace-web-redirects)
   * [Table of Contents](#table-of-contents)
     * [Inputs](#inputs)
     * [Outputs](#outputs)
@@ -35,7 +35,7 @@
 
 ## Author Information
 
-This repository is maintained by the contributors listed on [GitHub](https://github.com/workloads/web-assets/graphs/contributors).
+This repository is maintained by the contributors listed on [GitHub](https://github.com/workloads/web-redirects/graphs/contributors).
 
 ## License
 
