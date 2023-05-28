@@ -9,6 +9,26 @@ variable "domain" {
   default     = "workloads.io"
 }
 
+variable "redirects" {
+  type = list(object({
+    name       = string
+    target     = string
+    utm_source = optional(string, "WKLDS_GO")
+  }))
+
+  description = "List of Redirect Objects."
+
+  default = [
+    {
+      name   = "gh"
+      target = "https://github.com/workloads/"
+      }, {
+      name   = "home"
+      target = "https://workloads.io/"
+    },
+  ]
+}
+
 variable "subdomain" {
   type        = string
   description = "Subdomain."

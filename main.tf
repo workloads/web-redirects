@@ -32,8 +32,37 @@ resource "aws_s3_object" "index" {
 
   # see https://developer.hashicorp.com/terraform/language/functions/templatefile
   content = templatefile("./templates/index.tftpl.html", {
-    redirect_target = "https://${var.domain}/"
+    name      = var.domain
+    target    = "https://${var.domain}/"
+    timestamp = timestamp()
   })
 
+  content_type     = "text/html"
   content_encoding = "text/html"
 }
+
+# see https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_object
+resource "aws_s3_object" "redirects" {
+  for_each = {
+    for redirect in var.redirects : redirect.name => redirect
+  }
+
+  bucket = module.web_redirects.aws_s3_bucket.id
+  key    = each.value.name
+
+  # see https://developer.hashicorp.com/terraform/language/functions/templatefile
+  content = templatefile("./templates/index.tftpl.html", {
+    name      = each.value.name
+    target    = "${each.value.target}?utm_source=${each.value.utm_source}"
+    timestamp = timestamp()
+  })
+
+  tags = {
+    "redirect:key" = each.value.name
+    "redirect:url" = each.value.target
+  }
+
+  content_type     = "text/html"
+  content_encoding = "text/html"
+}
+

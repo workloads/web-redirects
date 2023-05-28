@@ -20,6 +20,7 @@
 |------|-------------|------|:--------:|
 | management_region_aws | AWS-specific `Management` Region Identifier. | `string` | yes |
 | domain | Parent Domain. | `string` | no |
+| redirects | List of Redirect Objects. | <pre>list(object({<br>    name       = string<br>    target     = string<br>    utm_source = optional(string, "WKLDS_GO")<br>  }))</pre> | no |
 | subdomain | Subdomain. | `string` | no |
 
 ### Outputs
@@ -31,6 +32,7 @@
 | aws_cloudfront_domain_name | Exported Attribute for `module.web_redirects.aws_cloudfront_distribution.domain_name`. |
 | aws_console_urls | AWS Console URLs. |
 | aws_s3_bucket | Exported Attribute for `module.web_redirects.aws_s3_bucket`. |
+| redirects | List of URL Redirects. |
 <!-- END_TF_DOCS -->
 
 ## Author Information
