@@ -21,7 +21,7 @@ variable "redirects" {
   default = [
     {
       name   = "gh"
-      target = "https://github.com/workloads/"
+      target = "https://github.com/workloads"
       }, {
       name   = "home"
       target = "https://workloads.io/"
