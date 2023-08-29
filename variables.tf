@@ -20,6 +20,17 @@ variable "redirects" {
 
   default = [
     {
+      name   = "bsky",
+      target = "https://staging.bsky.app/profile/workloads.bsky.social",
+      }, {
+      # general Discord Invite
+      name   = "discord",
+      target = "https://discord.gg/q5bm9P3Y",
+      }, {
+      # Discord Invite, specific to `minecraft-bots` channel
+      name   = "discord-mc",
+      target = "https://discord.gg/SnuFgbhj",
+      }, {
       name   = "gh"
       target = "https://github.com/workloads"
       }, {
@@ -34,6 +45,9 @@ variable "redirects" {
       }, {
       name   = "tw"
       target = "https://twitter.com/wrklds"
+      }, {
+      name   = "x"
+      target = "https://x.com/wrklds"
     },
   ]
 }
