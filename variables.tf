@@ -20,6 +20,12 @@ variable "redirects" {
 
   default = [
     {
+      name   = "aws-regional",
+      target = "https://github.com/workloads/regional-aws-deployment",
+      }, {
+      name   = "azure-regional",
+      target = "https://github.com/workloads/regional-azure-deployment",
+      }, {
       name   = "bsky",
       target = "https://staging.bsky.app/profile/workloads.bsky.social",
       }, {
@@ -30,6 +36,9 @@ variable "redirects" {
       # Discord Invite, specific to `minecraft-bots` channel
       name   = "discord-mc",
       target = "https://discord.gg/SnuFgbhj",
+      }, {
+      name   = "gcp-regional",
+      target = "https://github.com/workloads/regional-gcp-deployment",
       }, {
       name   = "gh"
       target = "https://github.com/workloads"
