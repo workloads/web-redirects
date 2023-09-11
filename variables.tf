@@ -37,6 +37,9 @@ variable "redirects" {
       name   = "discord-mc",
       target = "https://discord.gg/SnuFgbhj",
       }, {
+      name   = "do-regional",
+      target = "https://github.com/workloads/regional-do-deployment",
+      }, {
       name   = "gcp-regional",
       target = "https://github.com/workloads/regional-gcp-deployment",
       }, {
