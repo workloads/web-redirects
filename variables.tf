@@ -31,11 +31,11 @@ variable "redirects" {
       }, {
       # general Discord Invite
       name   = "discord",
-      target = "https://discord.gg/q5bm9P3Y",
+      target = "https://discord.gg/7dYVHzBT58",
       }, {
       # Discord Invite, specific to `minecraft-bots` channel
       name   = "discord-mc",
-      target = "https://discord.gg/SnuFgbhj",
+      target = "https://discord.gg/7dYVHzBT58",
       }, {
       name   = "do-regional",
       target = "https://github.com/workloads/regional-do-deployment",
