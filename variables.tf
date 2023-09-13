@@ -55,6 +55,9 @@ variable "redirects" {
       name   = "kb"
       target = "https://keybase.io/workloads"
       }, {
+      name   = "privacy-policy"
+      target = "https://github.com/workloads/.github/blob/main/PRIVACY.md"
+    },{
       name   = "tw"
       target = "https://twitter.com/wrklds"
       }, {
