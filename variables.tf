@@ -37,6 +37,10 @@ variable "redirects" {
       name   = "discord-mc",
       target = "https://discord.gg/7dYVHzBT58",
       }, {
+      # DigitalOcean Referral Link
+      name   = "do-referral",
+      target = "https://m.do.co/c/53544ec84215",
+      }, {
       name   = "do-regional",
       target = "https://github.com/workloads/regional-do-deployment",
       }, {
