@@ -27,7 +27,7 @@ variable "redirects" {
       target = "https://github.com/workloads/regional-azure-deployment",
       }, {
       name   = "baedge",
-      target = "https://github.com/workloads/badge-compute",
+      target = "https://github.com/workloads/baedge",
       }, {
       name   = "bsky",
       target = "https://staging.bsky.app/profile/workloads.bsky.social",
