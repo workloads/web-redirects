@@ -20,9 +20,6 @@ variable "redirects" {
 
   default = [
     {
-      name   = "advanced-tf-techniques",
-      target = "https://github.com/ksatirli/advanced-terraform-techniques/tree/main",
-      }, {
       name   = "aws-regional",
       target = "https://github.com/workloads/regional-aws-deployment",
       }, {
