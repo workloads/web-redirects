@@ -1,11 +1,11 @@
-# Terraform Cloud Workspace `web-redirects`
+# HCP Terraform Workspace `web-redirects`
 
 > This repository manages URL redirects for [@workloads](https://github.com/workloads).
 
 ## Table of Contents
 
 <!-- TOC -->
-* [Terraform Cloud Workspace `web-redirects`](#terraform-cloud-workspace-web-redirects)
+* [HCP Terraform Workspace `web-redirects`](#hcp-terraform-workspace-web-redirects)
   * [Table of Contents](#table-of-contents)
   * [Requirements](#requirements)
     * [Development](#development)
