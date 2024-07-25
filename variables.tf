@@ -30,7 +30,7 @@ variable "redirects" {
       target = "https://github.com/workloads/baedge",
       }, {
       name   = "bsky",
-      target = "https://staging.bsky.app/profile/workloads.bsky.social",
+      target = "https://bsky.app/profile/workloads.bsky.social",
       }, {
       # general Discord Invite
       name   = "discord",
